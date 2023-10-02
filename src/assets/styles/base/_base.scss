@@ -1,0 +1,41 @@
+/*
+ *
+ * @Copyright 2023 TO WIN
+ *
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+
+html,
+body,
+main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $color-black;
+    font-family: 'Roboto', sans-serif;
+
+    @media only screen and (max-width: 768px) {
+        overflow-x: hidden;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+section {
+    min-width: 100vh;
+
+    @media only screen and (max-width: 768px) {
+        min-width: auto;
+    }
+}
+
+.primary {
+    color: $color-primary;
+}
+
+.secondary {
+    color: $color-secondary;
+}

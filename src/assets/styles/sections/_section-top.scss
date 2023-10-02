@@ -1,0 +1,114 @@
+/*
+ *
+ * @Copyright 2023 TO WIN
+ *
+ */
+ 
+.section-top {
+    background: url('../../images/capa.JPG');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -170px;
+
+    &__wrap {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%), linear-gradient(0deg, rgba($color-black,1) 0%, rgba($color-black,0) 10%);
+
+        &__content {
+            position: relative;
+            top: -40px;
+            max-width: 70%;
+
+            &__logo {
+                img {
+                    width: 20%;
+                    height: 30%;
+                }
+            }
+
+            &__cta{
+                display: flex;
+                justify-content: space-between;
+
+                &__copy {
+                    margin-top: 60px;
+                    margin-right: 75px;
+                    width: 50%;
+
+                    h1 {
+                        font-size: 40px;
+                        color: $color-white;   
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                        color: $color-white;
+                        line-height: 10px;
+                    }
+
+                    h3 {
+                        font-size: 17px;
+                        color: $color-primary;
+                    }
+
+                    p {
+                        font-size: 17px;
+                        color: $color-white;
+                        margin-top: 40px;
+                    }
+                }
+
+                &__form {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 35%;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        background-size: cover;
+        background-position: top;
+
+        &__wrap {
+            width: 100%;
+            height: auto;
+
+            background: linear-gradient(0deg, rgba($color-black,1) 35%, rgba($color-black,0) 100%);
+
+            &__content {
+                //padding: 30px;
+                position: unset;
+                top: 0;
+
+                &__logo {
+                    img {
+                        width: 45%;
+                        margin-top: 20px;
+                    }
+                }
+
+                &__cta {
+                    display: block;
+
+                    &__copy {
+                        margin-top: 20px;
+                        width: 100%;
+                    }
+                }
+
+                &__form {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}

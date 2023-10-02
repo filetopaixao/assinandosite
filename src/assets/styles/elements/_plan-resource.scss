@@ -1,0 +1,19 @@
+/*
+ *
+ * @Copyright 2023 TO WIN
+ *
+ */
+
+.plan-resource {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    margin-bottom: 10px;
+
+    svg {
+        width: 30px;
+        height: 30px;
+        fill: $color-primary;
+        margin-right: 10px;
+    }
+}
