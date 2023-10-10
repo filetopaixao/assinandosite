@@ -24,7 +24,7 @@ const TestimonialsSlider = () => {
 
 	React.useEffect(() => {
 		if(!isVisibleState && isVisible) setIsVisibleState(isVisible);
-	}, [isVisible]);
+	}, [isVisible, isVisibleState]);
 
     const settings = {
 		infinite: true,
@@ -44,7 +44,7 @@ const TestimonialsSlider = () => {
                             <p>Para mim, a ajuda deles foi bem importante nos últimos meses. Foram quem tornou possível colocar no ar o site do jeito que eu gostaria (e que as pessoas costumam elogiar quando visitam). O suporte durante o período (inclusive com tutorial, quando precisei) e a disponibilidade de ajudar (até hoje) são diferenciais do seu trabalho. Obrigada!</p>
                             <div className="testimonial__thumb-box">
                                 <div className="testimonial__thumb-box__thumb">
-                                    <img src={testimonial4} />
+                                    <img src={testimonial4} alt="Depoimento - Mariana Andrade" />
                                     <div className="testimonial__thumb-box__thumb__quote">
                                         <FormatQuote />
                                     </div>
@@ -56,7 +56,7 @@ const TestimonialsSlider = () => {
                             <p>Excelentes profissionais com trabalho impecável, tirando todas as dúvidas necessárias e atendendo todas as necessidades. Conseguiu traduzir e transformar a ideia e projeto em algo real com perfeição.</p>
                             <div className="testimonial__thumb-box">
                                 <div className="testimonial__thumb-box__thumb">
-                                    <img src={testimonial1} />
+                                    <img src={testimonial1} alt="Depoimento - Aline Milani" />
                                     <div className="testimonial__thumb-box__thumb__quote">
                                         <FormatQuote />
                                     </div>
@@ -68,7 +68,7 @@ const TestimonialsSlider = () => {
                             <p>Demonstraram competência e segurança em relação ao serviço prestado. Sanaram todas as dúvidas quando solicitado, foram atenciosos e pontuais na entrega, características fundamentais no mercado contemporâneo.</p>
                             <div className="testimonial__thumb-box">
                                 <div className="testimonial__thumb-box__thumb">
-                                    <img src={testimonial2} />
+                                    <img src={testimonial2} alt="Depoimento - Paulo Mota" />
                                     <div className="testimonial__thumb-box__thumb__quote">
                                         <FormatQuote />
                                     </div>
@@ -80,7 +80,7 @@ const TestimonialsSlider = () => {
                             <p>Profissionais muito solícitos, rápidos e competentes. Eles tem domínio das técnicas e ferramentas de desenvolvimento e sabe usá-las muito bem.</p>
                             <div className="testimonial__thumb-box">
                                 <div className="testimonial__thumb-box__thumb">
-                                    <img src={testimonial3} />
+                                    <img src={testimonial3} alt="Depoimento - Rafael Abud" />
                                     <div className="testimonial__thumb-box__thumb__quote">
                                         <FormatQuote />
                                     </div>

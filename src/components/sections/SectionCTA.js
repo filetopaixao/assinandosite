@@ -7,9 +7,9 @@
 import React from 'react';
 import Form from '../elements/Form';
 
-const SectionCTA = () => {
+const SectionCTA = ({sectionCTARef}) => {
     return (
-		<section className="section-cta">
+		<section className="section-cta" ref={sectionCTARef}>
 			<div className="section-cta__wrap">
 				<div className="section-cta__wrap__content">
 					<div className="section-cta__wrap__content__cta">

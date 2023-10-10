@@ -8,9 +8,11 @@
 import { useState, useEffect } from "react";
 import { Slide, Grow } from '@mui/material';
 import Logo from '../../assets/images/logo.png';
-import Form from "../elements/Form";
+import { Player } from 'video-react';
+import Video from '../../assets/videos/video.mp4';
+import VideoCapa from '../../assets/images/video-capa.png';
 
-const SectionTop = () => {
+const SectionTop = ({sectionCTARef}) => {
     const [animationStart, setAnimationStart] = useState(false);
 
     useEffect(() => {
@@ -23,7 +25,7 @@ const SectionTop = () => {
        	 	<div className="section-top__wrap__content">
 				<Grow in={animationStart}>
 					<div className="section-top__wrap__content__logo">
-						<img src={Logo} />
+						<img src={Logo} alt="Assinando Site logo" />
 					</div>
 				</Grow>
 				<div className="section-top__wrap__content__cta">
@@ -35,12 +37,20 @@ const SectionTop = () => {
 						</div>
 					</Slide>
 					<Slide direction="left" in={animationStart} style={{ transitionDelay: animationStart ? '200ms' : '0ms' }}>
-						<div  className="section-top__wrap__content__cta__form">
-							<Form />
+						<div  className="section-top__wrap__content__cta__video">
+                            <Player
+                                playsInline
+                                fluid={false}
+                                poster={VideoCapa}
+                                src={Video}
+                                height={350}
+                                width={400}
+                            />
 						</div>
 					</Slide>
 				</div>
         	</div>
+            <button onClick={() => {sectionCTARef.current?.scrollIntoView({ behavior: 'smooth' })}}>QUERO UM SITE POR ASSINATURA</button>
         </div>
     </section>
     )

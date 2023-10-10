@@ -3,7 +3,9 @@
  * @Copyright 2023 TO WIN
  *
  */
- 
+
+@import "~video-react/styles/scss/video-react";
+
 .section-top {
     background: url('../../images/capa.JPG');
     background-size: 50%;
@@ -64,13 +66,23 @@
                     }
                 }
 
-                &__form {
+                &__video {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    min-width: 35%;
+                    min-width: 40%;
                 }
             }
+        }
+
+        button {
+            background-color: #009bdb;
+            font-size: 16px;
+            border: none;
+            padding: 17px 13px;
+            width: 265px;
+            color: #ffffff;
+            margin-top: 20px;
         }
     }
 

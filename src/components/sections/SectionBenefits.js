@@ -20,7 +20,7 @@ const SectionBenefits = () => {
 
 	React.useEffect(() => {
 		if(!isVisibleState && isVisible) setIsVisibleState(isVisible);
-	}, [isVisible]);
+	}, [isVisible, isVisibleState]);
 
 	const onScroll = React.useCallback(event => {
 		const { scrollY } = window;
@@ -36,7 +36,7 @@ const SectionBenefits = () => {
 	  return () => {
 		 window.removeEventListener("scroll", onScroll, { passive: true });
 	  }
-	}, []);
+	}, [onScroll]);
 
     return (
 		<section className="section-benefits">

@@ -19,7 +19,7 @@ const SectionTeam = () => {
 
 	useEffect(() => {
 		if(!isVisibleState && isVisible) setIsVisibleState(isVisible);
-	}, [isVisible]);
+	}, [isVisible, isVisibleState]);
 
 	return (
 		<section className="section-team">
