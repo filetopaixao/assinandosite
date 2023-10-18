@@ -26,18 +26,28 @@
 
             h1 {
                 color: $color-white;
-                font-size: 35px;
+                font-size: 60px;
             }
 
             h2 {
-                color: $color-white;
-                font-size: 17px;
+                font-size: 19px;
+                margin-bottom: 50px;
             }
         }
 
-        &__members {
+        &__portfólio {
+            display: flex;
             width: 100%;
             color: $color-white;
+
+            &__image {
+                width: 25%;
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 
